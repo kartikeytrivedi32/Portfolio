@@ -1,0 +1,8 @@
+// Smooth scroll for nav links
+document.querySelectorAll('.navbar a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const section = document.querySelector(this.getAttribute('href'));
+    section.scrollIntoView({ behavior: 'smooth' });
+  });
+});
