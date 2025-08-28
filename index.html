@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartikey Trivedi | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 5px;
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #444;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #0077ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kartikey Trivedi</h1>
+    <p>BCA Student at VSICS | Full Stack Web Developer</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am Kartikey Trivedi, a passionate BCA student at VSICS with a keen interest in Full Stack Web Development, UI/UX Design, Java DSA, and DBMS. I love building interactive and visually stunning projects that merge creativity with functionality.
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="grid">
+      <div class="card">10th - Completed
+        (92%)
+      </div>
+      <div class="card">12th - Completed (84%)</div>
+      <div class="card">BCA - Pursuing at VSICS</div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">Full Stack Web Developer</div>
+      <div class="card">C</div>
+      <div class="card">C++</div>
+      <div class="card">DSA</div>
+      <div class="card">DBMS</div>
+      <div class="card">DevOps</div>
+    <data class="card">Team Management</data>
+    <data class="card">Project Management</data>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p>Email: kartiktrivedikartik@gmail.com</p>
+      <p>Phone: 9005438831</p>
+      <p>
+        <a href="https://instagram.com/_its_kartikey_78_" target="_blank">Instagram</a>
+        <a href="https://github.com/kartikeytrivedi32" target="_blank">GitHub</a>
+        <a href="https://snapchat.com/add/trivedi20239052" target="_blank">Snapchat</a>
+        <a href="https://wa.me/9005438831" target="_blank">WhatsApp</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Kartikey Trivedi | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Simple smooth scroll for navigation (future navbar)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
